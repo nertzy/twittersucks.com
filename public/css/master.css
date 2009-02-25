@@ -1,0 +1,78 @@
+body{
+  font-family:"Myriad Pro", "Lucida Grande", Verdana, Helvetica, sans-serif;
+  font-size:62.5%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#eff), to(#00abeb));
+  background-color: #A3D9F4;
+}
+
+h1{
+  font-size:3.6em;
+  text-align:center;
+}
+
+li{
+/*  height:100px;*/
+  margin:20px auto;
+  width:600px;
+  padding:20px;
+  border:1px solid #cc0;
+  list-style: none;
+  overflow:hidden;
+  border-radius:1em;
+  -webkit-border-radius:1em;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffc), to(#fff));
+  background-color: #ffffe8;
+}
+
+li div.avatar{
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ffffe8));
+  background-color: #fffff8;
+  border:1px solid #ee8;
+  float:left;
+  width:100px;
+  text-align:center;
+  font-size:1.2em;
+  border-radius:1em;
+  -webkit-border-radius:1em;
+}
+
+li div.avatar a{
+  display:block;
+  padding:10px;
+  text-decoration:none;
+}
+
+li div.avatar a:hover{
+  text-decoration:underline;
+}
+
+li div.avatar img{
+  display:block;
+  margin:0 auto 10px;
+  border:0;
+}
+
+li div.avatar span.from_user{
+  display:block;
+  margin:0;
+}
+
+
+li div.content{
+  padding-left:140px;
+}
+
+li div.content p.text{
+  font-size:1.6em;
+}
+
+li div.content p.metadata{
+  font-size:1.2em;
+}
+
+#footer{
+  width:600px;
+  margin:0 auto;
+}
