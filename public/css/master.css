@@ -20,8 +20,10 @@ li{
   overflow:hidden;
   border-radius:1em;
   -webkit-border-radius:1em;
+  -moz-border-radius:1em;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
   -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
   background: -webkit-gradient(linear, left top, left bottom, from(#ffc), to(#fff));
   background-color: #ffffe8;
 }
@@ -36,6 +38,7 @@ li div.avatar{
   font-size:1.2em;
   border-radius:1em;
   -webkit-border-radius:1em;
+  -moz-border-radius:1em;
 }
 
 li div.avatar a{
@@ -52,6 +55,8 @@ li div.avatar img{
   display:block;
   margin:0 auto 10px;
   border:0;
+  max-width:48px;
+  max-height:48px;
 }
 
 li div.avatar span.from_user{
