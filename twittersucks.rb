@@ -1,15 +1,15 @@
 require 'rubygems'
-require 'sinatra'
+require 'sinatra/base'
+require 'padrino-helpers'
+require 'padrino-core/application/rendering'
 require 'twitter'
-require 'action_view'
 
 helpers do
-  include Rack::Utils
-  include ActionView::Helpers::DateHelper
-  alias_method :h, :escape_html
+  include Padrino::Helpers
 end
 
 get '/' do
   @search = Twitter.search('"twitter sucks" OR twittersucks').statuses
   erb :index
 end
+

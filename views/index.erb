@@ -26,11 +26,11 @@
           <p class="text"><%= result.text %></p>
           <p class="metadata">
             <a href="http://twitter.com/<%= h escape(result.from_user) %>/status/<%= result.id %>">
-              <%= time_ago_in_words Time.parse(result.created_at) %> ago
+              <%= time_ago_in_words result.created_at %> ago
             </a>
             <% if result.to_user %>
               <span class="to_user">
-                in reply to 
+                in reply to
                 <a href="http://twitter.com/<%= h escape(result.to_user) %>">
                   <%= h result.to_user %>
                 </a>
