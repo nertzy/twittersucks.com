@@ -8,7 +8,7 @@ helpers do
 end
 
 get '/' do
-  @search = Twitter.search('"twitter sucks" OR twittersucks').statuses
+  @search = Twitter.search('"twitter sucks" OR twittersucks')
   erb :index
 end
 
