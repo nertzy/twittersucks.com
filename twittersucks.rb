@@ -3,6 +3,10 @@ require 'sinatra/base'
 require 'padrino-helpers'
 require 'twitter'
 
+configure :production do
+  require 'newrelic_rpm'
+end
+
 helpers do
   include Padrino::Helpers
 end
