@@ -1,7 +1,6 @@
 require 'rubygems'
 require 'sinatra/base'
 require 'padrino-helpers'
-require 'padrino-core/application/rendering'
 require 'twitter'
 
 helpers do
