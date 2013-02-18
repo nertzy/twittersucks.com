@@ -10,6 +10,6 @@ helpers do
 end
 
 get '/' do
-  @search = Twitter::Search.new.containing('"twitter sucks" OR twittersucks').to_a
+  @search = Twitter.search('"twitter sucks" OR twittersucks').statuses
   erb :index
 end
