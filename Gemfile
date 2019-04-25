@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem "sinatra"
-gem "twitter"
+gem "twitter", "~> 4.5"
 gem "padrino-helpers"
 gem "newrelic_rpm"
 
