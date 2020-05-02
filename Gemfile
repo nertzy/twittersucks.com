@@ -1,11 +1,13 @@
 source 'https://rubygems.org'
 
-gem "sinatra"
-gem "twitter", "~> 4.5"
-gem "padrino-helpers"
 gem "newrelic_rpm"
+gem "padrino-helpers"
+gem "rinku"
+gem "sinatra"
+gem "twitter"
 
 group :development do
-  gem "rerun"
+  gem "byebug"
   gem "rb-fsevent"
+  gem "rerun"
 end

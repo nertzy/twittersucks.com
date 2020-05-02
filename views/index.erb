@@ -12,27 +12,29 @@
 <body>
   <h1>Twitter sucks!</h1>
   <ul>
-    <% @search.each do |result| %>
+    <% @search.take(25).each do |tweet| %>
       <li>
         <div class="avatar">
-          <a href="http://twitter.com/<%= h escape(result.from_user) %>">
-            <img src="<%= h result.profile_image_url %>">
+          <a href="<%= h tweet.user.uri %>">
+            <img src="<%= h tweet.user.profile_image_uri %>">
             <span class="from_user">
-              <%= h result.from_user %>
+              <%= h tweet.user.name %>
             </span>
           </a>
         </div>
         <div class="content">
-          <p class="text"><%= result.text %></p>
+          <p class="text">
+            <%= Rinku.auto_link(highlight(tweet.full_text, "twitter sucks", "twittersucks")) %>
+          </p>
           <p class="metadata">
-            <a href="http://twitter.com/<%= h escape(result.from_user) %>/status/<%= result.id %>">
-              <%= time_ago_in_words result.created_at %> ago
+            <a href="<%=h tweet.uri %>">
+              <%= time_ago_in_words tweet.created_at %> ago
             </a>
-            <% if result.to_user %>
+            <% if tweet.reply? %>
               <span class="to_user">
                 in reply to
-                <a href="http://twitter.com/<%= h escape(result.to_user) %>">
-                  <%= h result.to_user %>
+                <a href="http://twitter.com/<%= h escape(tweet.in_reply_to_screen_name) %>/statuses/<%= h tweet.in_reply_to_status_id %>">
+                  <%= h tweet.in_reply_to_screen_name %>
                 </a>
               </span>
             <% end %>
@@ -43,7 +45,7 @@
   </ul>
   <div id="footer">
     <p>
-      &copy; 2009&ndash;13 Grant Hutchins | <a href="http://nertzy.com">nertzy.com</a>
+      &copy; 2009&ndash;20 Grant Hutchins | <a href="http://nertzy.com">nertzy.com</a>
     </p>
   </div>
   <script type="text/javascript">
