@@ -1,17 +1,18 @@
 body{
-  font-family:"Myriad Pro", "Lucida Grande", Verdana, Helvetica, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size:62.5%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#eff), to(#00abeb));
+  background: linear-gradient(#eff, #00abeb);
   background-color: #A3D9F4;
 }
 
 h1{
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
   font-size:3.6em;
   text-align:center;
 }
 
 li{
-/*  height:100px;*/
   margin:20px auto;
   width:600px;
   padding:20px;
@@ -19,17 +20,13 @@ li{
   list-style: none;
   overflow:hidden;
   border-radius:1em;
-  -webkit-border-radius:1em;
-  -moz-border-radius:1em;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
-  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffc), to(#fff));
+  background: linear-gradient(#ffc, #fff);
   background-color: #ffffe8;
 }
 
 li div.avatar{
-  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ffffe8));
+  background: linear-gradient(#fff, #ffffe8);
   background-color: #fffff8;
   border:1px solid #ee8;
   float:left;
@@ -37,8 +34,6 @@ li div.avatar{
   text-align:center;
   font-size:1.2em;
   border-radius:1em;
-  -webkit-border-radius:1em;
-  -moz-border-radius:1em;
 }
 
 li div.avatar a{
@@ -63,7 +58,6 @@ li div.avatar span.from_user{
   display:block;
   margin:0;
 }
-
 
 li div.content{
   padding-left:140px;
