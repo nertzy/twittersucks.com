@@ -9,7 +9,7 @@ GEM
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
     equalizer (0.0.11)
-    ffi (1.12.2)
+    ffi (1.13.1)
     ffi-compiler (1.0.1)
       ffi (>= 1.0.0)
       rake
@@ -24,7 +24,7 @@ GEM
     http-parser (1.2.1)
       ffi-compiler (>= 1.0, < 2.0)
     http_parser.rb (0.6.0)
-    i18n (0.9.5)
+    i18n (1.8.3)
       concurrent-ruby (~> 1.0)
     listen (3.2.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
@@ -35,13 +35,13 @@ GEM
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
     naught (1.1.0)
-    newrelic_rpm (6.10.0.364)
-    padrino-helpers (0.14.4)
-      i18n (~> 0.6, >= 0.6.7)
-      padrino-support (= 0.14.4)
+    newrelic_rpm (6.11.0.365)
+    padrino-helpers (0.15.0)
+      i18n (>= 0.6.7, < 2)
+      padrino-support (= 0.15.0)
       tilt (>= 1.4.1, < 3)
-    padrino-support (0.14.4)
-    public_suffix (4.0.4)
+    padrino-support (0.15.0)
+    public_suffix (4.0.5)
     rack (2.2.3)
     rack-protection (2.0.8.1)
       rack
@@ -88,6 +88,9 @@ DEPENDENCIES
   rinku
   sinatra
   twitter
+
+RUBY VERSION
+   ruby 2.7.1p83
 
 BUNDLED WITH
    2.1.4
