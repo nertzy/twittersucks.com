@@ -57,6 +57,7 @@ li div.avatar img{
 li div.avatar span.from_user{
   display:block;
   margin:0;
+  word-break:break-word;
 }
 
 li div.content{
