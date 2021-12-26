@@ -1,3 +1,13 @@
+GIT
+  remote: https://github.com/padrino/padrino-framework.git
+  revision: 87a299bd9f2ee6a71946ce66311fda7a34a4bb16
+  specs:
+    padrino-helpers (0.15.1)
+      i18n (>= 0.6.7, < 2)
+      padrino-support (= 0.15.1)
+      tilt (>= 1.4.1, < 3)
+    padrino-support (0.15.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -37,11 +47,6 @@ GEM
     naught (1.1.0)
     newrelic_rpm (8.2.0)
     nio4r (2.5.8)
-    padrino-helpers (0.15.1)
-      i18n (>= 0.6.7, < 2)
-      padrino-support (= 0.15.1)
-      tilt (>= 1.4.1, < 3)
-    padrino-support (0.15.1)
     public_suffix (4.0.6)
     puma (5.5.2)
       nio4r (~> 2.0)
@@ -85,7 +90,7 @@ PLATFORMS
 DEPENDENCIES
   byebug
   newrelic_rpm
-  padrino-helpers
+  padrino-helpers!
   puma
   rb-fsevent
   rerun
@@ -94,7 +99,7 @@ DEPENDENCIES
   twitter
 
 RUBY VERSION
-   ruby 3.0.2p107
+   ruby 3.1.0p0
 
 BUNDLED WITH
    2.2.24

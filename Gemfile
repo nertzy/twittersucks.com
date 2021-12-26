@@ -1,8 +1,8 @@
 source "https://rubygems.org"
-ruby "3.0.2"
+ruby "3.1.0"
 
 gem "newrelic_rpm"
-gem "padrino-helpers"
+gem "padrino-helpers", github: "padrino/padrino-framework"
 gem "puma"
 gem "rinku"
 gem "sinatra"
