@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/padrino/padrino-framework.git
-  revision: 87a299bd9f2ee6a71946ce66311fda7a34a4bb16
+  revision: 6288cd14022ed887466c36925d24f1e30d5afb2f
   specs:
     padrino-helpers (0.15.1)
       i18n (>= 0.6.7, < 2)
@@ -19,7 +19,7 @@ GEM
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
     equalizer (0.0.11)
-    ffi (1.15.4)
+    ffi (1.15.5)
     ffi-compiler (1.0.1)
       ffi (>= 1.0.0)
       rake
@@ -34,9 +34,9 @@ GEM
     http-parser (1.2.3)
       ffi-compiler (>= 1.0, < 2.0)
     http_parser.rb (0.6.0)
-    i18n (1.8.11)
+    i18n (1.9.1)
       concurrent-ruby (~> 1.0)
-    listen (3.7.0)
+    listen (3.7.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     memoizable (0.4.2)
@@ -45,16 +45,16 @@ GEM
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
     naught (1.1.0)
-    newrelic_rpm (8.2.0)
+    newrelic_rpm (8.4.0)
     nio4r (2.5.8)
     public_suffix (4.0.6)
-    puma (5.5.2)
+    puma (5.6.2)
       nio4r (~> 2.0)
     rack (2.2.3)
     rack-protection (2.1.0)
       rack
     rake (13.0.6)
-    rb-fsevent (0.11.0)
+    rb-fsevent (0.11.1)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     rerun (0.13.1)
