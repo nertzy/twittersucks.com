@@ -9,10 +9,6 @@ client = Twitter::REST::Client.new do |config|
   config.consumer_secret = ENV.fetch("TWITTER_CONSUMER_SECRET")
 end
 
-configure :production do
-  require 'newrelic_rpm'
-end
-
 helpers do
   include Padrino::Helpers
 end

@@ -1,7 +1,6 @@
 source "https://rubygems.org"
 ruby "3.1.2"
 
-gem "newrelic_rpm"
 gem "padrino-helpers", github: "padrino/padrino-framework"
 gem "puma"
 gem "rinku"
