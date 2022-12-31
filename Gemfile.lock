@@ -97,7 +97,7 @@ DEPENDENCIES
   twitter
 
 RUBY VERSION
-   ruby 3.1.2p20
+   ruby 3.2.0p0
 
 BUNDLED WITH
-   2.2.24
+   2.4.1
