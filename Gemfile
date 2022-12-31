@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 ruby "3.2.0"
 
-gem "padrino-helpers", github: "padrino/padrino-framework"
+gem "padrino-helpers"
 gem "puma"
 gem "rinku"
 gem "sinatra"
